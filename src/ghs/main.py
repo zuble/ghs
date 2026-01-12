@@ -53,9 +53,9 @@ def get_repos_from_list(list_name):
                     pagination = soup.find("div", class_="pagination")
                     if pagination:
                         next_button = pagination.find("a", class_="next_page")
-                        if not next_button or "disabled" in next_button.get(
-                            "class", []
-                        ):
+                        if not next_button:
+                            has_next_page = False
+                        if "disabled" in next_button.get("class", [""]):
                             has_next_page = False
                     else:
                         has_next_page = False
