@@ -1,0 +1,15 @@
+[project]
+authors = [{name = "zuble", email = "67658465+zuble@users.noreply.github.com"}]
+dependencies = [
+    "click>=8.3.1,<9",
+    "pyrootutils>=1.0.4,<2",
+    "requests>=2.32.5,<3",
+    "rich>=14.2.0,<15"
+]
+name = "ghs"
+requires-python = ">= 3.11"
+version = "0.1.0"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
