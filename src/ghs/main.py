@@ -3,12 +3,13 @@ import os
 import os.path as osp
 import time
 
-import cfg
 import click
 import requests
-from app import app
 from bs4 import BeautifulSoup
 from rich import print as pprint
+
+from . import cfg
+from .app import app
 
 
 def get_repos_from_list(list_name):

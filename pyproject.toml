@@ -22,6 +22,7 @@ requires = ["hatchling"]
 [tool.hatch.metadata]
 allow-direct-references = true
 
+
 ## -----------------
 ## PIXI
 [tool.pixi.workspace]

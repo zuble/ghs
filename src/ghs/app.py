@@ -2,13 +2,13 @@ import json
 import subprocess
 import sys
 from pathlib import Path
-from rich import print as pprint
 
 from InquirerPy import inquirer
 from InquirerPy.base.control import Choice
 from InquirerPy.validator import PathValidator
+from rich import print as pprint
 
-import cfg
+from . import cfg
 
 
 def app(target_dir_path):
@@ -167,7 +167,3 @@ def clone_repositories(repo_hrefs, target_dir_path):
             pprint("Error: 'git' command not found.")
             break
     pprint(f"\nCloned {success_count}/{len(repo_hrefs)} repos.")
-
-
-if __name__ == "__main__":
-    app()
