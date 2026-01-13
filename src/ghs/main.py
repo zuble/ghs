@@ -8,8 +8,8 @@ import requests
 from bs4 import BeautifulSoup
 from rich import print as pprint
 
-from . import cfg
-from .app import app
+from ghs.app import app
+from ghs.cfg import cfg
 
 
 def get_repos_from_list(list_name):
@@ -150,7 +150,6 @@ def jsonify_star_lists(username=None):
     "-c", "--cwd", is_flag=True, default=False, help="sets download path to cwd"
 )
 def main(update, cwd):
-    ## TODO: make pixi run globally
     target_dir_path = None
     if cwd:
         target_dir_path = os.getcwd()

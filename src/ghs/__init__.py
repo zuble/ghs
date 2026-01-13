@@ -1,3 +1,5 @@
+# import os
+
 import pyrootutils
 
 ROOT_PATH = pyrootutils.setup_root(
@@ -6,3 +8,5 @@ ROOT_PATH = pyrootutils.setup_root(
     pythonpath=True,
     dotenv=True,
 )
+
+# HOME_PATH = os.getenv("PATH_MNT", "~/")

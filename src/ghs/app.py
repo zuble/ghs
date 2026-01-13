@@ -8,7 +8,7 @@ from InquirerPy.base.control import Choice
 from InquirerPy.validator import PathValidator
 from rich import print as pprint
 
-from . import cfg
+from ghs.cfg import cfg
 
 
 def app(target_dir_path):

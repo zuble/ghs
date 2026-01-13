@@ -136,7 +136,7 @@ packages:
 - pypi: ./
   name: ghs
   version: 0.1.0
-  sha256: c8fd56385c13cf9031fea7d8caf1071c956657bbcd9d30b9fdf2f13be8f89ed6
+  sha256: bc75f3531837d093661c839e7ccf996369a50e2b8291abf6f005878938146f27
   requires_dist:
   - click>=8.3.1,<9
   - pyrootutils>=1.0.4,<2

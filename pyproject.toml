@@ -35,6 +35,7 @@ preview = ["pixi-build"]
 
 [tool.pixi.dependencies]
 
+
 [tool.pixi.pypi-dependencies]
 ghs = { path = ".", editable = true }
 # inquirerpy = { git = "https://github.com/zuble/InquirerPy.git", rev = "master" }
@@ -67,4 +68,4 @@ hatchling = "*"
 uv = "*"
 
 [tool.pixi.tasks]
-main="python src/ghs/main.py"
+main = { cmd = "python main.py", cwd = "src/ghs" }
