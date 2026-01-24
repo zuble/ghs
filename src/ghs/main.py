@@ -56,7 +56,7 @@ def get_repos_from_list(list_name):
                         next_button = pagination.find("a", class_="next_page")
                         if not next_button:
                             has_next_page = False
-                        if "disabled" in next_button.get("class", [""]):
+                        elif "disabled" in next_button.get("class", [""]):
                             has_next_page = False
                     else:
                         has_next_page = False

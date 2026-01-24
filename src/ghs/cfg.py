@@ -1,3 +1,4 @@
+import os
 import os.path as osp
 from dataclasses import dataclass
 
@@ -13,7 +14,8 @@ class Config:
     HEADERS = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
     }
-
+    HOME_PATH = os.getenv("PATH_MNT","")
+    assert HOME_PATH
     # defaults at InquirerPy.prompts.fuzzy
     # kbs = {
     # 	"up": [{"key": "up"}],
