@@ -11,6 +11,7 @@ dependencies = [
     "rich>=14.2.0,<15",
     "bs4>=0.0.2,<0.0.3",
     "inquirerpy @ git+https://github.com/zuble/InquirerPy.git@master",
+    "pydantic>=2.12.5,<3",
 ]
 [project.scripts]
 ghs = "ghs.main:main"
@@ -68,3 +69,7 @@ uv = "*"
 
 [tool.pixi.tasks]
 main = { cmd = "python main.py", cwd = "src/ghs" }
+
+# [tool.ruff]
+# line-length = 20
+# indent-width = 4
