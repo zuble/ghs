@@ -10,7 +10,7 @@ from ghs import ROOT_PATH
 @dataclass
 class Config:
     GH_UNAME = "zuble"
-    JSON_FILE = osp.join(ROOT_PATH, f"assets/{GH_UNAME}_stars.json")
+    JSON_FILE = osp.join(ROOT_PATH, f"{GH_UNAME}_stars.json")
     HEADERS = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
     }
